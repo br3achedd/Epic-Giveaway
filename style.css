@@ -1,0 +1,47 @@
+body {
+  background: #111;
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+#rainbow-text {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: rainbow 3s infinite linear;
+}
+
+@keyframes rainbow {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: green; }
+  66%  { color: blue; }
+  83%  { color: indigo; }
+  100% { color: violet; }
+}
+
+#win-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  background: hotpink;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#win-button:hover {
+  background: limegreen;
+  transform: scale(1.1);
+}
